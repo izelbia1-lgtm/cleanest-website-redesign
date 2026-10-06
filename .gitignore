@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.qa/
+.vercel/
+.env
+.env.*
+!.env.example
+*.local
+*.log
+*.tsbuildinfo
+.vite/
+coverage/
+playwright-report/
+test-results/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+# Local source captures and machine-specific verification history.
+research/*.html
+research/VERIFICATION.md
