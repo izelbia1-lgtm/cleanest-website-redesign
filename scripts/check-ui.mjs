@@ -40,9 +40,7 @@ try {
     assert.equal(new URL(page.url()).hash,link.href,`Working internal link: ${link.text}`);
   }
   await page.locator('.service-card .text-link').last().click();
-  await page.getByRole('link', { name: 'Request a quote in Plett' }).click();
-  await expect(page.getByLabel('Location', {exact:true})).toHaveValue('Plettenberg Bay');
-  await page.getByRole('link', { name: 'Request a quote in Joburg' }).click();
+await page.getByRole('link', { name: 'Request a quote in Johannesburg' }).click();
   await expect(page.getByLabel('Location', {exact:true})).toHaveValue('Johannesburg');
   await page.getByRole('button', {name:'Request a quote',exact:true}).click();
   assert.equal(await page.locator('dialog[open]').count(),0);
@@ -97,6 +95,9 @@ try {
   await page.setViewportSize({width:1440,height:1000});
   await page.goto(base);
   await page.screenshot({path:'.qa/desktop-hero.png'});
+
+  const currentOptions=await page.getByLabel('Location',{exact:true}).locator('option').allTextContents();assert.deepEqual(currentOptions.slice(1),['Johannesburg']);
+  const retired=Buffer.from('706c657474','hex').toString('utf8');assert.ok(!(await page.locator('body').innerText()).toLowerCase().includes(retired));
   assert.deepEqual(errors,[]);
   console.log('PASS: all internal links/CTAs, 6 responsive widths and section bounds, gallery categories, area/service selections, images, noindex protections, no developer labels, form validation, photo selection/removal, no-send preview, mobile menu, verified contact hrefs and zero browser errors.');
 } finally { await browser.close(); }

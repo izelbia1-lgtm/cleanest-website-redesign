@@ -1,19 +1,11 @@
-# Source audit — 6 October 2026
+# Current content scope — 8 October 2026
 
-Public pages fetched directly from https://www.cleanest.co.za/ and archived here before implementation.
+Simone’s direct client confirmation supersedes older coverage on the existing website. Cleanest operates in Johannesburg only. The source website remains unmodified.
 
-| Source | Facts reused |
-| --- | --- |
-| https://www.cleanest.co.za/ | 29 years of experience; owner managed and personal attention; dedicated local teams; cleaning and gardens for homes/businesses; two service areas; contacts; WhatsApp and Facebook hrefs |
-| https://www.cleanest.co.za/carpetcleaning.html | Deep carpet cleaning; stain/odour treatment; sofa/chair/mattress cleaning |
-| https://www.cleanest.co.za/windowcleaning.html | Accessible windows up to second floor; inside/outside glass; frames/sills/tracks; glass doors and mirrors. This specific limit takes precedence over broader homepage high-reach wording. |
-| https://www.cleanest.co.za/cleanestgardenservices.html | Residential/complex/estate/corporate grounds; mowing/edging/pruning supplemented by homepage; tree felling; site clearing; irrigation installations; golf estates; school/sport fields |
-| https://www.cleanest.co.za/johannesburgcleanest.html | Johannesburg suburb list and Sarah L. testimonial, verbatim |
-| https://www.cleanest.co.za/plettenbergbaycleanest.html | Plett/Garden Route coverage; holiday properties/guest houses; David F. testimonial, verbatim |
-| https://www.cleanest.co.za/contact.html | 083 440 2603; simone@cleanest.co.za; jason@cleanest.co.za; Monday–Friday 08h00–17h00 |
+Retained Johannesburg suburbs: Sandton, Randburg, Roodepoort, Midrand, Fourways, Bryanston, Rosebank, Bedfordview and Edenvale, supported by https://www.cleanest.co.za/johannesburgcleanest.html. Only the exact Sarah L. testimonial from that page is retained.
 
-Testimonial text is present on the published site, but authorship and permission have not been independently established. Request client confirmation before official launch. Published testimonials are attributed via links in the demo; no ratings have been added.
+Services, owner management and the stated 29 years of experience remain supported by the homepage and carpet/window/garden service pages. Existing phone, Simone/Jason emails, operating hours, Facebook and WhatsApp contacts remain unchanged. Raw historical source captures and prior QA images are archived outside the projects, not served or committed.
 
-Downloaded original assets: images/cleanestlogo.png (local cleanest-logo.png), images/newgarden1.webp, images/newcarpet1.webp, images/winc1.webp. The site's images/newheader.webp was inspected but not used in the redesign. These are source-site photographs, not newly invented project images. Permission to republish must be confirmed for the final launch.
+The shoreline garden photograph and regional testimonial have been removed. The hedge-maintenance photograph already supplied by Cleanest is used in the same image containers, without claiming a specific project location. Other real photographs and galleries remain intact.
 
-Omitted claims: unspecified insurance with asterisk; customer counts; guarantees; prices; certification; ratings. Pressure washing is only mentioned in the contact dropdown and is not featured without further confirmation. The 29-year statement is kept exactly, not extrapolated into a founding date.
+Noindex and local-only enquiry behaviour remain unchanged. No new suburbs, addresses, contact details, services or business claims were introduced.

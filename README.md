@@ -53,3 +53,7 @@ Noindex does not restrict access. Configure hosting access protection if the pre
 Confirm experience wording, branch services/coverage, contacts/hours, testimonial authenticity and permission, photography rights and high-resolution branding. Obtain matched before-and-after images and captions. Decide enquiry recipients, secure uploads, privacy wording and retention. Prepared LocalBusiness data is inactive and requires launch validation.
 
 Business imagery and testimonials remain attributable to Cleanest; this public repository does not grant permission to reuse them elsewhere.
+
+## Current service area
+
+The client confirmed on 8 October 2026 that Cleanest serves Johannesburg only. This supersedes older location information on the official source website. Forms, metadata, service areas and testimonial content reflect that instruction.
