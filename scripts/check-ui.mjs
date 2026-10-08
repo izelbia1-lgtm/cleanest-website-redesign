@@ -1,3 +1,4 @@
+import './check-approved-imagery.mjs';
 import assert from 'node:assert/strict';
 import { mkdir } from 'node:fs/promises';
 import { readFileSync } from 'node:fs';
@@ -101,3 +102,4 @@ await page.getByRole('link', { name: 'Request a quote in Johannesburg' }).click(
   assert.deepEqual(errors,[]);
   console.log('PASS: all internal links/CTAs, 6 responsive widths and section bounds, gallery categories, area/service selections, images, noindex protections, no developer labels, form validation, photo selection/removal, no-send preview, mobile menu, verified contact hrefs and zero browser errors.');
 } finally { await browser.close(); }
+
