@@ -45,6 +45,8 @@ await page.getByRole('link', { name: 'Request a quote in Johannesburg' }).click(
   await expect(page.getByLabel('Location', {exact:true})).toHaveValue('Johannesburg');
   await page.getByRole('button', {name:'Request a quote',exact:true}).click();
   assert.equal(await page.locator('dialog[open]').count(),0);
+
+  await page.getByLabel('Phone number',{exact:true}).fill('         ');assert.equal(await page.getByLabel('Phone number',{exact:true}).evaluate(input=>input.checkValidity()),false,'Whitespace cannot stand in for a phone number');
   await page.getByLabel('Name', {exact:true}).fill('Demo Visitor');
   await page.getByLabel('Phone number', {exact:true}).fill('bad-number');
   assert.equal(await page.getByLabel('Phone number').evaluate(input=>input.checkValidity()),false);
@@ -68,7 +70,7 @@ await page.getByRole('link', { name: 'Request a quote in Johannesburg' }).click(
   for(const email of ['simone@cleanest.co.za','jason@cleanest.co.za'])assert.equal(await page.locator(`a[href="mailto:${email}"]`).count(),2);
   assert.equal(await page.locator('a[href="https://www.facebook.com/cleanestsa"]').count(),1);
   await expect(page.locator('.floating-contact')).toHaveText('WhatsApp us');
-  for(const width of [320,390,768,1024,1440,1920]) {
+  for(const width of [320,375,430,768,1366,1920]) {
     await page.setViewportSize({width,height:1000});
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`No horizontal overflow at ${width}`);
     await page.evaluate(()=>scrollTo(0,0));
@@ -102,4 +104,3 @@ await page.getByRole('link', { name: 'Request a quote in Johannesburg' }).click(
   assert.deepEqual(errors,[]);
   console.log('PASS: all internal links/CTAs, 6 responsive widths and section bounds, gallery categories, area/service selections, images, noindex protections, no developer labels, form validation, photo selection/removal, no-send preview, mobile menu, verified contact hrefs and zero browser errors.');
 } finally { await browser.close(); }
-
